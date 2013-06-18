@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head>
+    <title>Tika Wrapper</title>
+    <style type="text/css">
+        html {background-color: #eee; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+        body {
+            margin: 15px;
+        }
+        .container {
+            -webkit-column-count: 2;
+            -moz-column-count: 2;
+        }
+        .container > div {
+            -webkit-column-break-inside: avoid;
+            background-color: #fff;
+            padding: 2% 1%;
+        }
+        pre {background-color: #eee; border: 1px solid #ddd; padding: 5px;}
+        li { line-height: 1.5 }
+        input[type="text"] {width:100%;}
+        input[type="submit"] {float: right;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Tika Wrapper</h1>
+        </div>
+        <div>
+            <h2>Doc</h2>
+            <p>This tika wrapper works giving a URL to a PDF file as input. The output is the extracted text of the PDF file.</p>
+
+            <p>Try tika-wrapper:</p>
+
+            <form action="/tika" method="GET">
+                <input type="text" name="pdf" placeholder="http://example.com/my.pdf">
+                <input type="submit" value="Extract">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
